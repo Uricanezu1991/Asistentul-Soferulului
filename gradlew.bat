@@ -1,0 +1,1 @@
+Wrapper jar normally required, but Codemagic will use system Gradle.
