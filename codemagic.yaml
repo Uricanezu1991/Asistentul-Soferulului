@@ -4,9 +4,8 @@ workflows:
     environment:
       java: 17
     scripts:
-      - name: Build APK corect
+      - name: Build APK with system Gradle
         script: |
-          chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+          gradle :app:assembleDebug --stacktrace
     artifacts:
       - app/build/outputs/apk/debug/app-debug.apk
